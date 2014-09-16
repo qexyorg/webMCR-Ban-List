@@ -1,0 +1,24 @@
+<style>
+.bl_copy { text-align:right; background:#F5F5F5; border: 1px solid #E5E5E5; padding: 5px; }
+</style>
+<div class="form-block">
+	<div class="block-header">Банлист</div>
+	<div class="block-line"></div>
+	<table class="table table-striped">
+		<thead>
+			<tr>
+				<th>Игрок</th>
+				<th>Причина</th>
+				<th>Выдающий</th>
+				<th>Дата наказания</th>
+				<th>Дата окончания</th>
+				<th>Действие</th>
+			</tr>
+		</thead>
+		<tbody>
+			<?=$array_bans?>
+		</tbody>
+	</table>
+	<br clear="all">
+	<?=$pagination?>
+</div>
