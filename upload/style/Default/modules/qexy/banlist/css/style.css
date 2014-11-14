@@ -1,0 +1,8 @@
+.bl-global .menu { margin: 5px; display: block; text-align: right; }
+
+.bl-global .bl-settings .table { font-family: verdana; background: #fff; }
+.bl-global .bl-settings .table .name { font-weight: bold; color: #555; width: 60%; }
+.bl-global .bl-settings .table .desc { font-weight: normal; color: #999; font-size: 11px; }
+.bl-global .bl-settings .table .submits { text-align: right; }
+
+.bl-copyright { display: block; width: 54px; height: 55px; background: url("../img/copyright_icon.png") no-repeat; float: right; margin-top: 10px; }

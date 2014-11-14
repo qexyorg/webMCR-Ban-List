@@ -1,0 +1,72 @@
+<div class="bl-settings">
+	<form method="post">
+		<table class="table table-hover table-bordered">
+
+			<tbody>
+				<tr>
+					<td class="name">Таблица
+						<div class="desc">- Название таблицы бан-листа в базе</div>
+					</td>
+					<td class="inputs"><input type="text" name="table" placeholder="Название" value="<?php echo $data['TABLE']; ?>" required></td>
+				</tr>
+
+				<tr>
+					<td class="name">Поле ID
+						<div class="desc">- Поле идентификатора строки забаненного</div>
+					</td>
+					<td class="inputs"><input type="text" name="r_id" placeholder="Название" value="<?php echo $data['R_ID']; ?>" required></td>
+				</tr>
+
+				<tr>
+					<td class="name">Поле причины
+						<div class="desc">- Поле причины бана</div>
+					</td>
+					<td class="inputs"><input type="text" name="r_reason" placeholder="Название" value="<?php echo $data['R_REASON']; ?>" required></td>
+				</tr>
+
+				<tr>
+					<td class="name">Поле ника игрока
+						<div class="desc">- Поле ника игрока, который получил наказание</div>
+					</td>
+					<td class="inputs"><input type="text" name="r_login" placeholder="Название" value="<?php echo $data['R_LOGIN']; ?>" required></td>
+				</tr>
+
+				<tr>
+					<td class="name">Поле "кто забанил"
+						<div class="desc">- Поле логина администратора/модератора, забанившего игрока</div>
+					</td>
+					<td class="inputs"><input type="text" name="r_by" placeholder="Название" value="<?php echo $data['R_BY']; ?>" required></td>
+				</tr>
+
+				<tr>
+					<td class="name">Поле время бана
+						<div class="desc">- Поле, отвечающее за дату выдачи бана</div>
+					</td>
+					<td class="inputs"><input type="text" name="r_time" placeholder="Название" value="<?php echo $data['R_TIME']; ?>" required></td>
+				</tr>
+
+				<tr>
+					<td class="name">Поле время разбана
+						<div class="desc">- Поле, отвечающее за дату разбана игрока</div>
+					</td>
+					<td class="inputs"><input type="text" name="r_temp" placeholder="Название" value="<?php echo $data['R_TEMP']; ?>" required></td>
+				</tr>
+
+				<tr>
+					<td class="name">Поле типа
+						<div class="desc">- Поле типа бана</div>
+					</td>
+					<td class="inputs"><input type="text" name="r_type" placeholder="Название" value="<?php echo $data['R_TYPE']; ?>" required></td>
+				</tr>
+
+				<tr>
+					<td class="submits" colspan="2">
+						<input type="hidden" name="<?php echo $data['BL_F_SECURITY']; ?>" value="<?php echo $data['BL_F_SET']; ?>">
+						<input type="submit" class="btn btn-primary" name="submit" value="Сохранить">
+					</td>
+				</tr>
+			</tbody>
+
+		</table>
+	</form>
+</div>
