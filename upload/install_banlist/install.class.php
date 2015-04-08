@@ -165,7 +165,7 @@ class bl_install{
 
 			require(MCR_ROOT."instruments/menu_items.php");
 
-			if(!isset($menu_items[0]['qexy_banlist'])){
+			if(@$_POST['menu']=='true' && !isset($menu_items[0]['qexy_banlist'])){
 				$menu_items[0]['qexy_banlist'] = array (
 				  'name' => 'Бан-лист',
 				  'url' => '?mode=statics&do=admin',
