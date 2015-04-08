@@ -120,7 +120,7 @@ class bl_install{
 
 				$query2 = $this->db->query($sql2);
 
-				if(!$query || !$query2){ $this->init->notify("Ошибка переустановки #2".mysql_error(), "&do=install", "Ошибка!", 3); };
+				if(!$query || !$query2){ $this->init->notify("Ошибка переустановки #2".mysql_error(), "&do=install", "Ошибка!", 3); }
 			}
 
 			$_SESSION['install_step'] = "2";
